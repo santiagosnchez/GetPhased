@@ -1,6 +1,5 @@
 # ©Santiago Sanchez-Ramirez, University of Toronto
 
-use Smart::Match;
 my $hapfile;
 my $alnfile;
 my $outfile;
@@ -231,7 +230,7 @@ foreach(sort {$a cmp $b} keys %alnhash){
 		}
 		if ((scalar(@phased1) == scalar(@alnseq)) && (scalar(@phased2) == scalar(@alnseq))){
 			if ($res == 0){
-				if (@phased1 ~~ any(@phased2)){
+				if (@phased1 ~~ @phased2){
 					print OUT $_ . "\n" . join('', @phased1) . "\n";
 					push @seqnumb, 1;
 				} else {
