@@ -11,7 +11,17 @@ They should only be used for site-based summary statistics.
 
     git clone https://github.com/santiagosnchez/GetPhased
     cd GetPhased
-    chmod +x GetPhased.pl
-    sudo cp GetPhased.pl /usr/local/bin
+    chmod +x getPhased.pl
+    sudo cp getPhased.pl /usr/local/bin
 
-## 
+## Running the code
+
+Use the `-h` flag for more details
+
+    perl getPhased.pl -h
+    
+    Try:
+    perl getPhased.pl -hap hapfile.fasta    [ FASTA alignemnt with haploid sequences; result from OrderFromSamtools.pl ]
+                      -aln alignment.fasta  [ FASTA alignment with original sequences; i.e. with ambiguities ]
+                      -out outfile.fasta    [ Your result will be stored here ]
+                      -res                  [ Optional argument for randomly resolving ambiguities, in case no haploid sequence were found ]
