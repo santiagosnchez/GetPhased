@@ -1,5 +1,6 @@
 # ©Santiago Sanchez-Ramirez, University of Toronto
 
+no warnings;
 my $hapfile;
 my $alnfile;
 my $outfile;
