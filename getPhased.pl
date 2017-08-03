@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 # ©Santiago Sanchez-Ramirez, University of Toronto
 
 no warnings;
