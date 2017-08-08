@@ -16,7 +16,7 @@ They should only be used for site-based summary statistics.
 
 ## Running the code
 
-Use the `-h` flag for more details
+Use the `-h` flag for more details:
 
     perl getPhased.pl -h
     
