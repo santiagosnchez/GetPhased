@@ -13,7 +13,7 @@ Try:
 perl getPhased.pl -hap hapfile.fasta    [ FASTA alignemnt with haploid sequences; result from OrderFromSamtools.pl ]
                   -aln alignment.fasta  [ FASTA alignment with original sequences; i.e. with ambiguities ]
                   -out outfile.fasta    [ Your result will be stored here ]
-                  -res                  [ Optional argument for randomly resolving ambiguities, in case no haploid sequence were found ]\n\n";
+                  -res                  [ Optional argument for randomly resolving ambiguities, in case no haploid sequences were found ]\n\n";
 }
 
 if (grep { /^-res$/ } @ARGV){
